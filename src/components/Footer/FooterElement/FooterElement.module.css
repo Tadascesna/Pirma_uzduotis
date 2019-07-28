@@ -1,0 +1,16 @@
+.FooterElement {
+    display: flex;
+    font-family:  'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #ffff;
+}
+
+.FooterElement__text {
+    margin: 0;
+    padding-left: 7px;
+    text-transform: capitalize;
+}
+
+.Image {
+    max-height: 16px;
+}

@@ -1,0 +1,31 @@
+.timeWrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    align-items: center;
+    margin: auto;
+    flex-basis: 100%;
+}
+
+.timeNumber {
+    margin: auto;
+    align-self: center;
+}
+
+.timePeriod {
+    margin: auto;
+    align-self: center;
+    text-transform: uppercase;
+    font-family:  'Arimo', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+
+}
+.FlexAndCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
