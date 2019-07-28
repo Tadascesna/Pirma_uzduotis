@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './App.module.css';
+import classes from './App.module.scss';
 import Navigation from './containers/Navigation/Navigation'
 import Background from './components/Background/Background'
 import MainBody from './components/MainBody/MainBody'

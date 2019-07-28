@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Navigation.module.css'
+import classes from './Navigation.module.scss'
 import Link from '../../components/Link/Link'
 import {ReactComponent as Logo} from '../../assets/logo.svg'
 
@@ -8,7 +8,7 @@ const navigation = () => {
         <nav className={classes.Navigation}>
             <Logo className={classes.Logo} />
             <div className={classes.Links}>
-                <ul className={classes.Link__container}>
+                <ul className={classes.Links__container}>
                     <Link link = '/'> web hosting </Link>
                     <Link link = '/'> cloud hosting </Link>
                     <Link link = '/'> vps hosting </Link>

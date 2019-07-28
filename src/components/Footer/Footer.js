@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Footer.module.css';
+import classes from './Footer.module.scss';
 import FooterElement from './FooterElement/FooterElement'
 
 const footer = (props) => {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './TimeCounter.module.css'
+import classes from './TimeCounter.module.scss'
 
 class TimeCounter extends Component {
 
@@ -40,36 +40,36 @@ class TimeCounter extends Component {
     render() {
 
         let timeShower =  
-        <div className={classes.timeWrapper}>
-            <div className={classes.FlexAndCenter} >
-                <h2 className={classes.timeNumber}>
+        <div className={classes.TimeWrapper}>
+            <div className={classes.TimeContainer} >
+                <h2 className={classes.TimeContainer__Number}>
                     {this.state.days}
                 </h2>
-                <p className={classes.timePeriod}>
+                <p className={classes.TimeContainer__Period}>
                     Days
                 </p> 
             </div>
-            <div className={classes.FlexAndCenter}>
-                <h2 className={classes.timeNumber}> 
+            <div className={classes.TimeContainer}>
+                <h2 className={classes.TimeContainer__Number}> 
                     {this.state.hours}
                 </h2>
-                <p className={classes.timePeriod}>
+                <p className={classes.TimeContainer__Period}>
                     hours
                 </p> 
             </div>
-            <div className={classes.FlexAndCenter}>
-                <h2 className={classes.timeNumber}>
+            <div className={classes.TimeContainer}>
+                <h2 className={classes.TimeContainer__Number}>
                     {this.state.minutes}
                 </h2>
-                <p className={classes.timePeriod}>
+                <p className={classes.TimeContainer__Period}>
                     minutes
                 </p> 
             </div>
-            <div className={classes.FlexAndCenter}>
-                <h2 className={classes.timeNumber}>
+            <div className={classes.TimeContainer}>
+                <h2 className={classes.TimeContainer__Number}>
                     {this.state.seconds}
                 </h2>
-                <p className={classes.timePeriod}>
+                <p className={classes.TimeContainer__Period}>
                     seconds
                 </p> 
             </div>

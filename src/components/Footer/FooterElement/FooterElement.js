@@ -1,6 +1,6 @@
 import React from 'react';
 import checkmark from '../../../assets/Checkmark.png';
-import classes from './FooterElement.module.css';
+import classes from './FooterElement.module.scss';
 
 
 const footerElement = (props) => {

@@ -1,0 +1,35 @@
+@import '../../Styles/shared';
+
+.TimeWrapper {
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    align-items: center;
+    margin: auto;
+    flex-basis: 100%;
+
+}
+
+.TimeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__Number {
+        margin: auto;
+        align-self: center;
+    }
+    
+    &__Period {
+        margin: auto;
+        align-self: center;
+        text-transform: uppercase;
+        font-family:  'Arimo', Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-sizing: border-box;
+    }
+    
+}

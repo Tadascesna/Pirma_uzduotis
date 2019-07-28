@@ -1,0 +1,48 @@
+@import '../../../Styles/shared';
+
+.PriceContainer {
+    box-sizing: border-box;
+    color: $color-white;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 300px;
+}
+
+
+.Dollar {
+    align-items: center;
+    display: flex;
+
+    &__Sign {
+        font-size: 100px;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    &__Number {
+        font-size: 300px;;
+        font-weight: 900;
+        margin: 0;
+    }
+}
+
+.CentsAndTime {
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__Cents {
+        font-size: 70px;
+        margin: 0;
+    }
+
+    &__Time {
+        font-size: 60px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+

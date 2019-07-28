@@ -1,0 +1,22 @@
+@import '../../Styles/shared';
+
+.List {
+    list-style: none;
+    display: inline;
+}
+
+.Link {
+    font-family: "Arimo", Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: bold;
+    color: $color-white;
+    margin-left: 10px;
+    transition: all 100ms ease;
+
+    &:hover {
+        border-bottom: 2px solid rgb(249, 82, 89);
+    }
+}
