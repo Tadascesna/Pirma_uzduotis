@@ -11,7 +11,7 @@ import Auxiliary from '../../hoc/Auxiliary'
 class Navigation extends Component {
 
     state = {
-        showMenu: true
+        showMenu: false
     }
 
     toggleMenuHandler = () => {
