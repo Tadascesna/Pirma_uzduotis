@@ -1,4 +1,4 @@
-@import '../../Styles/shared';
+@import '../../../Styles/shared';
 
 .List {
     list-style: none;
@@ -15,8 +15,16 @@
     color: $color-white;
     margin-left: 10px;
     transition: all 100ms ease;
+    height: 100%;
 
     &:hover {
         border-bottom: 2px solid rgb(249, 82, 89);
+    }
+}
+
+.LinkContainer {
+    list-style: none;
+    @include respond-to ($breakpoint-tablet) {
+        display: inline;
     }
 }

@@ -7,19 +7,30 @@
     box-sizing: border-box;
     color: $color-white;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 30px;
     outline: 0;
-    padding: 15px 50px 15px;
+    padding: 10px 30px 10px;
     text-transform: uppercase;
     transition: all 200ms ease;
+
+
+    @include respond-to($breakpoint-tablet) {
+        font-size: 16px;
+        padding: 12px 40px 12px;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        font-size: 18px;
+        padding: 15px 50px 15px;
+    }
 }
 
 .Button:hover {
-    background-color: $color-red;
+    background-color: $color-darker-red;
     transform: translateY(-3px);
 }
 

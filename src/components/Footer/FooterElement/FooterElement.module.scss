@@ -5,6 +5,16 @@
     display: flex;
     font-family:  'Open Sans', sans-serif;
     font-size: 13px;
+    padding-left: 10px;
+    width: 211px;
+
+
+    @include respond-to($breakpoint-tablet) {
+        padding-left: 0px
+    }
+
+    @include respond-to($breakpoint-desktop) {
+    }
 
     &__text {
         margin: 0;

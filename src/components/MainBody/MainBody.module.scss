@@ -3,24 +3,92 @@
 .MainBodyContainer {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
-    justify-content: space-between;
+    justify-content: center;
+
+    @include respond-to($breakpoint-tablet) {
+        justify-content: space-between;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+    }
+}
+.LeftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to($breakpoint-tablet) {
+        align-items: flex-start;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        align-items: flex-start;
+    }
+}
+
+.ButtonContainer {
+    display: flex;
+    justify-content: center;
+
+    @include respond-to($breakpoint-tablet) {
+        justify-content: flex-start
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        justify-content: flex-start
+    }
 }
 
 .MainBody {
     &__Right {
-        flex-basis: 50%
+        flex-basis: 100%;
+        @include respond-to($breakpoint-tablet) {
+            flex-basis: 50%;
+        }
     }
 
     &__Left {
-        flex-basis: 40%
+
+        margin-top: 50px;
+
+
+        flex-basis: 100%;
+
+        @include respond-to($breakpoint-tablet) {
+            margin-top: 0px;
+            flex-basis: 50%;
+
+        
+        }
     }
 }
 
+
+
 .MainText {
     color: $color-white;
-    margin: 10px 0px 10px;
+    margin: 5px 0px 5px;
     text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+    
+    @include respond-to($breakpoint-tablet) {
+        margin: 8px 0px 8px;
+        font-size: 30px;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        margin: 10px 0px 10px;
+        font-weight: 700;
+        font-size: 40px;
+    }
 
     &__Strong {
         color: $color-red;
@@ -33,7 +101,15 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    max-width: 350px;
+    max-width: 250px;
+
+    @include respond-to($breakpoint-tablet) {
+        max-width: 250px;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        max-width: 350px;
+    }
 }
 
 .Arrows {
@@ -59,10 +135,9 @@
     }
 }
 
-
-
 .TimeCounter {
-    flex-basis: 90%
+    flex-basis: 90%;
+
 }
 
 

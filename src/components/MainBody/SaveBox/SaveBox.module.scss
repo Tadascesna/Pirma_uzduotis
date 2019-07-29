@@ -1,0 +1,37 @@
+@import '../../../Styles/shared';
+
+.BoxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box {
+    background-color: $color-lighter-red;
+    box-sizing: border-box;
+    color: $color-white;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    
+    @include respond-to ($breakpoint-tablet) {
+        padding: 8px 15px;
+        margin-top: 0px;
+        
+    }
+    @include respond-to ($breakpoint-desktop) {
+        padding: 10px 20px;
+        
+    }
+}
+
+.ArrowDown {
+    border-top: 7px solid $color-lighter-red;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    flex-basis: 5%;
+    height: 0;
+    width: 0;
+}

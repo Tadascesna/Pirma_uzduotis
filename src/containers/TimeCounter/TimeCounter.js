@@ -8,8 +8,7 @@ class TimeCounter extends Component {
         hours: null,
         minutes: null,
         seconds: null,        
-        distance: null,
-        noTimeLeft: false
+        noTimeLeft: false,
     }
 
     componentWillMount() {
@@ -18,20 +17,20 @@ class TimeCounter extends Component {
             let finalDate =  new Date('August 10, 2019 00:00:00').getTime();
             let today = new Date().getTime();
 
-            let noTimeLeft = undefined;
+            let TimeLeft = undefined;
 
             const distance = finalDate - today;
 
-            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            let newDays = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let newHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let newMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let newSeconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             if (distance <= 0) {
-                noTimeLeft = true;
+                TimeLeft = true;
             }
 
-            this.setState({distance, days, hours, minutes, seconds, noTimeLeft});
+            this.setState({days: newDays, hours: newHours, minutes: newMinutes, seconds:newSeconds, noTimeLeft: TimeLeft});
         },1000)
     };
 
@@ -79,7 +78,7 @@ class TimeCounter extends Component {
 
 
         if (this.state.noTimeLeft) {
-            timeShower = <div> No more time</div>
+            timeShower = <div className={classes.TimeLeft}> No more time</div>
         }
 
         return (

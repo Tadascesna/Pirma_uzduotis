@@ -1,0 +1,23 @@
+@import '../../../Styles/shared';
+
+.hamburgerContainer {
+    display: inline-block;
+    cursor: pointer;
+
+    @include respond-to ($breakpoint-tablet) {
+        display: none;
+    }
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: $color-white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}

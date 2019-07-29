@@ -1,0 +1,40 @@
+@import '../../../Styles/shared';
+
+.sideDrawContainer {
+    width: 150px;
+    height: 100vh;
+    opacity: 1;
+    position: fixed;
+    left: 0px;
+    z-index: 400;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include respond-to($breakpoint-tablet) {
+        display: none;
+    }
+}
+
+.Link__wrapper {
+    margin-top: 100px;
+    height: 100%;
+
+}
+
+.Link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.Modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 300;
+
+    @include respond-to($breakpoint-tablet) {
+        display: none;
+    }
+}

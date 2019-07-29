@@ -1,4 +1,17 @@
+@import '../../Styles/shared';
+
 .footerContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    @include respond-to($breakpoint-tablet) {
+        font-size: 70px;
+        justify-content: space-evenly;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        justify-content: space-between;
+    }
 }
